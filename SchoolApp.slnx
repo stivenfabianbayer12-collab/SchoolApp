@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="SchoolApp.BL/SchoolApp.BL.csproj" Id="6e289d93-33e2-4477-9d99-d6d87d64763d" />
+  <Project Path="SchoolApp.DAL/SchoolApp.DAL.csproj" Id="5d1d5659-0a1f-44b5-bb1b-611cc1ea6087" />
+  <Project Path="SchoolApp.Web/SchoolApp.Web.csproj" Id="a59860e2-829f-4848-8f78-946efbf0a130" />
+</Solution>
