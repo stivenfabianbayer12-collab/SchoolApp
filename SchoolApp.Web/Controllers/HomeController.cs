@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using SchoolApp.Web.Models;
+
 using System.Diagnostics;
 
 namespace SchoolApp.Web.Controllers
@@ -16,10 +16,6 @@ namespace SchoolApp.Web.Controllers
             return View();
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
     }
+
 }

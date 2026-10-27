@@ -1,7 +1,18 @@
-﻿namespace SchoolApp.DAL
+﻿using Microsoft.Extensions.DependencyInjection;
+using SchoolApp.DAL.Interfaces;
+using SchoolApp.DAL.Repositories.dbo;
+
+namespace SchoolApp.DAL
 {
-    public class DependencyInjection
+    public static class DependencyInjection
     {
-        // Aquí irán las configuraciones de inyección de dependencias del acceso a datos
+        public static IServiceCollection AddDataAccessLayer(this IServiceCollection services)
+        {
+            services.AddScoped<IEstudianteRepository, EstudianteRepository>();
+            services.AddScoped<IProfesorRepository, ProfesorRepository>();
+            services.AddScoped<IAsignaturaRepository, AsignaturaRepository>();
+
+            return services;
+        }
     }
 }
